@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	 <bean id="dbSynchronizeManager" class="com.chenfu.service.OracleDBSynchronizeManager"></bean>
+	 
+	 <bean id="d----"  class="com.chenfu.service.DefaultOracleObjectSynchronizer"></bean>
+	 
+	 <bean id="dbSynchronizeManagerBuilder" class="com.chenfu.service.DBSynchronizeManagerBuilder"></bean>
+	 
+	 <bean id="synchronizeParamInfo">
+	 	
+	 </bean>
+	 
+	 <bean id="srcDB" >
+	 	<url>jdbc:mysql://localhost:3306/count</url>
+	 	<username>root</username>
+	 	<password>root</password>
+	 </bean>
+	 
+	 <bean id="ctrlDB" >
+	 	<url>jdbc:mysql://localhost:3306/count2</url>
+	 	<username>root</username>
+	 	<password>root</password>
+	 </bean>
+	 
+	 <bean id="deskDB" class="com.chenfu.domain.DataBase">
+	 	<url>jdbc:mysql://localhost:3306/count2</url>
+	 	<username>root</username>
+	 	<password>root</password>
+	 </bean>
+	 
+	 <bean id="oracleViewDBSynchronizer">
+	 	<objectTypeCode>1</objectTypeCode>
+	 	<objectTypeLable>2</objectTypeLable>
+	 </bean>
+	 
+	 <bean id="oracleTableDBSynchronizer">
+	 	<objectTypeCode>3</objectTypeCode>
+	 	<objectTypeLable>4</objectTypeLable>
+	 </bean>
+	
+</beans>
